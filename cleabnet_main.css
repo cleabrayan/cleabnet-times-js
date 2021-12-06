@@ -1,0 +1,145 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root{
+    --blue:#4801ff;
+    --red:#dc143c;
+    --black:#343a40;
+    --white:#fff;
+    --orange:#ffc107;
+    --green:#28a745;
+    --wtbleu:#007bff;
+    --scblack:#6c757d;
+
+
+}
+body{
+    font-family: 'Nunito', sans-serif,'Arial';
+    background: linear-gradient(90deg,#4801ff,#dc143c);
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1{
+    font-size: 2.5rem;
+    margin: .75rem 0rem;
+    color: var(--white);
+    font-weight: border;
+}
+.container h3{
+    font-size: 1.6rem;
+    color: var(--white);
+    padding: 0px 5px;
+    margin-bottom: 2rem;
+}
+.container .c_tl{
+    display: flex;
+}
+.c_dt{
+    width: 100px;
+    height: 100px;
+    border-radius: 14px;
+    background: var(--white);
+    margin-right: 10px;
+    box-shadow: 0 10px 20px rgba(64, 64, 64, 0.15);
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    font-weight: 600;
+}
+.c_dt span{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.c_pb{
+margin-top: 20px;
+margin-left: 250px;
+}
+.c_pb .c_pb_t{
+    width: 320px;
+    height: 10px;
+    border-radius: 13px;
+    margin-top: 14px;
+}
+
+.c_pb_yr{
+    background: var(--scblack);
+
+}
+
+.c_pb_hr{
+    background: var(--green);
+}
+.c_pb_mn{
+    background: var(--wtbleu);
+}
+.c_pb_sc{
+    background: var(--orange);
+}
+
+.target_flw{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+.btn{
+    background-color: #89d8d3;
+    background-image: linear-gradient(
+315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 3;
+    width: 180px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 14px 21px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgb(255 255 255 / 50%), 7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
+    outline: none;
+    font-weight: bolder;
+}
+.btn:active{
+    margin: 5px;
+}
+
+
+@media (max-width:578px) {
+    .c_dt{
+        width: 80px;
+        height: 80px ;
+    }
+    .c_pb{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:400px) {
+    .container h3{
+        font-size: 19px;
+    }
+    .c_dt{
+        width: 75px;
+        height: 75px ;
+        font-size: 30px !important;
+    }
+}
